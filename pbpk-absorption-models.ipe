@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70206" creator="Ipe 7.2.7">
-<info created="D:20170327232854" modified="D:20170413003117"/>
+<info created="D:20170327232854" modified="D:20170413095926"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -220,13 +220,13 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
 <textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
 <textsize name="Large" value="\Large"/>
 <textsize name="LARGE" value="\LARGE"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="Huge" value="\Huge"/>
-<textsize name="small" value="\small"/>
 <textsize name="footnote" value="\footnotesize"/>
-<textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
@@ -297,26 +297,26 @@ h
 <layer name="CATDSR_names"/>
 <layer name="Excretion"/>
 <layer name="Enterocytes:Stomach"/>
-<view layers="PK-SIM_release PK-Sim_4 BC->BC INT->INT NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes C-A-T-D-S-R Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="PK-Sim_4 Dissolution<->Dissolved BC->BC INT->INT NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="INT->INT"/>
-<view layers="PK-Sim_4 Dissolution<->Dissolved NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="NONMUCOSA"/>
-<view layers="PK-Sim_4 Dissolution<->Dissolved Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="NONMUCOSA"/>
-<view layers="PK-Sim_4 Dissolution<->Dissolved Arterial_blood Venous_blood Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="NONMUCOSA"/>
-<view layers="PK-Sim_4 Dissolution<->Dissolved Arterial_blood Venous_blood MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="MUCOSA"/>
-<view layers="PK-Sim_4 Dissolution<->Dissolved Arterial_blood Venous_blood PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="Enterocytes_PKSIM"/>
+<view layers="PK-SIM_release PK-Sim_4 BC->BC INT->INT NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes C-A-T-D-S-R Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="PK-Sim_4 Dissolution<->Dissolved BC->BC INT->INT NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="INT->INT"/>
+<view layers="PK-Sim_4 Dissolution<->Dissolved NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="NONMUCOSA"/>
+<view layers="PK-Sim_4 Dissolution<->Dissolved Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="NONMUCOSA"/>
+<view layers="PK-Sim_4 Dissolution<->Dissolved Arterial_blood Venous_blood Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="NONMUCOSA"/>
+<view layers="PK-Sim_4 Dissolution<->Dissolved Arterial_blood Venous_blood MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="MUCOSA"/>
+<view layers="PK-Sim_4 Dissolution<->Dissolved Arterial_blood Venous_blood PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="Enterocytes_PKSIM"/>
 <view layers="PK-Sim_4 Dissolution<->Dissolved Arterial_blood Venous_blood PV Enterocytes S-D-J-J-I-I SDJJII->CATDSR Colon Excretion" active="Colon"/>
-<view layers="ADAM_=_Common_part_ADAM/ACAT NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="ADAM_f NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="ADAM_other NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="ACAT_0 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="ACAT_01 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="ACAT_1 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="ACAT_b NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="PK-Sim_0 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="PK-Sim_1 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="PK-Sim_2 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="PK-Sim_3 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
-<view layers="PK-Sim_4 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion" active="PK-Sim_4"/>
+<view layers="ADAM_=_Common_part_ADAM/ACAT NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="ADAM_f NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="ADAM_other NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="ACAT_0 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="ACAT_01 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="ACAT_1 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="ACAT_b NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="PK-Sim_0 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="PK-Sim_1 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="PK-Sim_2 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="PK-Sim_3 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
+<view layers="PK-Sim_4 NONMUCOSA Arterial_blood Venous_blood Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV MUCOSA INT BC PV Enterocytes S-D-J-J-I-I C-A-T-D-S-R SDJJII->CATDSR Enterocytes_PKSIM Dissolved_PKSIM CATDSR_names Excretion Enterocytes:Stomach" active="PK-Sim_4"/>
 <path layer="Colon" matrix="1 0 0 1 240 0" fill="gray" opacity="30%">
 168 460 m
 168 428 l
