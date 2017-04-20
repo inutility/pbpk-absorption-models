@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70206" creator="Ipe 7.2.7">
-<info created="D:20170327232854" modified="D:20170419231711"/>
+<info created="D:20170327232854" modified="D:20170420223901"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -13085,6 +13085,8 @@ h
 <layer name="beta"/>
 <layer name="PKSAColon"/>
 <layer name="PKSAMucosa"/>
+<layer name="PKSAnameColon"/>
+<layer name="PKSAnameColonFull"/>
 <view layers="input minStomach" active="minCPT"/>
 <view layers="input minStomach minCPTnames minCPT minCPTIleum minCPTColon" active="minExcretion"/>
 <view layers="input minStomach minCPTnames minCPT minCPTIleum minCPTColon minTransit minTransitIleum minEnterocytes minEnterocytesIleum minEnterocytesColon minExcretion" active="minExcretion"/>
@@ -13092,94 +13094,38 @@ h
 <view layers="input minStomach minCPTnames minCPT minCPTIleum minCPTColon minTransit minTransitIleum minEnterocytes minEnterocytesIleum minEnterocytesColon minExcretion minBlood minBloodIleum minElimination minEliminationIleum minZoom" active="minCPT"/>
 <view layers="minStomach minCPT minCPTColon minTransit minEnterocytes minEnterocytesColon minBlood minElimination ADAMname ADAM ADAMIleum ADAMSolid ADAMExcretion" active="ACAT"/>
 <view layers="minStomach minCPT minCPTColon minTransit minEnterocytes minEnterocytesColon minBlood minElimination ADAMname ADAM ADAMIleum ADAMSolid ADAMExcretion ACAT ACAThighlight" active="ACAThighlight"/>
-<view layers="minStomach minCPT minCPTIleum minCPTColon minTransit minTransitIleum minEnterocytes minEnterocytesIleum minEnterocytesColon minBlood minBloodIleum minElimination minEliminationIleum ADAM ADAMExcretion PKSAname" active="PKSABlood"/>
-<view layers="minStomach minCPT minCPTIleum minCPTColon minTransit minTransitIleum minEnterocytes minEnterocytesIleum minEnterocytesColon minElimination minEliminationIleum ADAM ADAMExcretion PKSAname PKSABlood" active="PKSABlood"/>
-<view layers="minStomach minCPT minCPTIleum minCPTColon minTransit minTransitIleum minEnterocytes minEnterocytesIleum minEnterocytesColon minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood" active="minEnterocytesColon"/>
-<view layers="minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon" active="PKSAColon"/>
-<view layers="minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon PKSAMucosa" active="PKSAMucosa"/>
-<view layers="Dissolved<->INT<->PV minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon PKSAMucosa" active="PKSAMucosa"/>
-<view layers="Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon PKSAMucosa" active="PKSAMucosa"/>
-<view layers="NONMUCOSA Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon PKSAMucosa" active="NONMUCOSA"/>
-<view layers="BC->BC INT->INT NONMUCOSA Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon PKSAMucosa" active="NONMUCOSA"/>
-<view layers="INT->INT" active="PKSAMucosa"/>
-<path layer="NONMUCOSA" matrix="9.7493 0 0 0.964486 -59.9665 -88.6578" stroke="gold" pen="heavier">
+<view layers="minStomach minCPT minCPTIleum minCPTColon minTransit minTransitIleum minEnterocytes minEnterocytesIleum minEnterocytesColon minBlood minBloodIleum minElimination minEliminationIleum ADAM ADAMExcretion PKSAname PKSAnameColon" active="PKSABlood"/>
+<view layers="minStomach minCPT minCPTIleum minCPTColon minTransit minTransitIleum minEnterocytes minEnterocytesIleum minEnterocytesColon minElimination minEliminationIleum ADAM ADAMExcretion PKSAname PKSABlood PKSAnameColon" active="PKSABlood"/>
+<view layers="minStomach minCPT minCPTIleum minCPTColon minTransit minTransitIleum minEnterocytes minEnterocytesIleum minEnterocytesColon minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAnameColon" active="minEnterocytesColon"/>
+<view layers="minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon PKSAnameColonFull" active="PKSAnameColonFull"/>
+<view layers="minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon PKSAMucosa PKSAnameColonFull" active="PKSAMucosa"/>
+<view layers="Dissolved<->INT<->PV minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon PKSAMucosa PKSAnameColonFull" active="PKSAMucosa"/>
+<view layers="Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon PKSAMucosa PKSAnameColonFull" active="PKSAMucosa"/>
+<view layers="NONMUCOSA Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon PKSAMucosa PKSAnameColonFull" active="NONMUCOSA"/>
+<view layers="BC->BC INT->INT NONMUCOSA Enterocytes<->Int<->BC<->PV Dissolved<->INT<->PV minStomach minCPT minCPTIleum minTransit minTransitIleum minEnterocytes minEnterocytesIleum minElimination minEliminationIleum ADAM ADAMExcretion ACAT PKSAname PKSABlood PKSAColon PKSAMucosa PKSAnameColonFull" active="NONMUCOSA"/>
+<view layers="Dissolved<->INT<->PV" active="PKSAMucosa"/>
+<path layer="NONMUCOSA" matrix="9.75002 0.00052721 -0.00514754 0.998594 -57.7767 -103.418" fill="0.918 0.835 0.631">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="9.75002 0.00052721 -0.00514754 0.998594 -57.7767 -103.418" fill="gold" opacity="30%">
+<path matrix="9.75002 0.00052721 -0.00514754 0.998594 -57.7767 -123.418" fill="0.729 0.655 0.475">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="9.75 0 0 0.969631 -60 -110.881" stroke="brown" pen="heavier">
+<path matrix="9.75 0 0 0.969631 -60 -130.881" stroke="0.549 0.404 0.157" pen="heavier">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="9.75002 0.00052721 -0.00514754 0.998594 -57.7767 -123.418" fill="orange" opacity="30%">
-16 432 m
-16 420 l
-48 420 l
-48 432 l
-h
-</path>
-<path matrix="9.75 0 0 0.969631 -60 -130.881" stroke="darkcyan" pen="heavier">
-16 432 m
-16 420 l
-48 420 l
-48 432 l
-h
-</path>
-<path matrix="9.76522 0.00052795 -0.00515556 1 -58.0164 -144.008" fill="darkcyan" opacity="30%">
-16 432 m
-16 420 l
-48 420 l
-48 432 l
-h
-</path>
-<path matrix="7.24948 0 0 0.964486 300.025 -88.6578" stroke="gold" pen="heavier">
-16 432 m
-16 420 l
-48 420 l
-48 432 l
-h
-</path>
-<path matrix="7.25002 0.00052721 -0.00382766 0.998594 301.653 -103.418" fill="gold" opacity="30%">
-16 432 m
-16 420 l
-48 420 l
-48 432 l
-h
-</path>
-<path matrix="7.25 0 0 0.969631 300 -110.881" stroke="brown" pen="heavier">
-16 432 m
-16 420 l
-48 420 l
-48 432 l
-h
-</path>
-<path matrix="7.25002 0.00052721 -0.00382766 0.998594 301.653 -123.418" fill="orange" opacity="30%">
-16 432 m
-16 420 l
-48 420 l
-48 432 l
-h
-</path>
-<path matrix="7.25 0 0 0.969631 300 -130.881" stroke="darkcyan" pen="heavier">
-16 432 m
-16 420 l
-48 420 l
-48 432 l
-h
-</path>
-<path matrix="7.26132 0.00052795 -0.00383362 1 301.475 -144.008" fill="darkcyan" opacity="30%">
+<path matrix="7.25 0 0 0.969631 300 -130.881" stroke="0.549 0.404 0.157" pen="heavier">
 16 432 m
 16 420 l
 48 420 l
@@ -24457,42 +24403,42 @@ h
 440 428 l
 h
 </path>
-<path layer="minStomach" matrix="1 0 0 1 80 -12" fill="gray" opacity="30%">
+<path layer="minStomach" matrix="1 0 0 1 80 -12" fill="gray">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path layer="minCPT" matrix="1 0 0 1 120 -12" fill="gray" opacity="30%">
+<path layer="minCPT" matrix="1 0 0 1 120 -12" fill="gray">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 160 -12" fill="gray" opacity="30%">
+<path matrix="1 0 0 1 160 -12" fill="gray">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 200 -12" fill="gray" opacity="30%">
+<path matrix="1 0 0 1 200 -12" fill="gray">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path layer="minCPTIleum" matrix="2.25 0 0 1 220 -12" fill="gray" opacity="30%">
+<path layer="minCPTIleum" matrix="2.25 0 0 1 220 -12" fill="gray">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="2.25 0 0 1 300 -12" fill="gray" opacity="30%">
+<path matrix="2.25 0 0 1 300 -12" fill="gray">
 16 432 m
 16 420 l
 48 420 l
@@ -24971,26 +24917,10 @@ h
 <text layer="INT" matrix="1 0 0 1 104.172 -8.35301" transformations="translations" pos="-20 384" stroke="black" type="label" width="76.023" height="6.726" depth="2.24" valign="baseline" size="small">Interstium/Plasma</text>
 <text layer="BC" matrix="1 0 0 1 111.8 -29.4317" transformations="translations" pos="4 388" stroke="black" type="label" width="43.955" height="6.227" depth="0" valign="baseline" size="small">Blood cells</text>
 <text layer="MUCOSA" matrix="0 1 -1 0 1120.54 -123.097" pos="480 452" stroke="black" type="label" width="44.775" height="8.203" depth="0" valign="baseline" size="large">\textbf{Mucosa}</text>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 -76 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
-<path matrix="1 0 0 1 -76 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
-</path>
-<path matrix="1 0 0 1 -76 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
-</path>
 <path layer="Enterocytes:Stomach" matrix="1 0 0 1 -40 0" stroke="purple" arrow="fdouble/small">
 240 400 m
 244 400 l
 244 388 l
-</path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 -116 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
 </path>
 <path layer="INT" matrix="0.888889 0 0 1 -12.4444 0" fill="gold" opacity="30%">
 212 384 m
@@ -25005,14 +24935,6 @@ h
 248 372 l
 248 384 l
 h
-</path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 -116 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
-<path matrix="1 0 0 1 -116 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
 </path>
 <path layer="Enterocytes" matrix="1 0 0 1 40 0" stroke="purple" arrow="fdouble/small">
 240 400 m
@@ -25033,14 +24955,6 @@ h
 248 384 l
 h
 </path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 -36 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
-</path>
-<path matrix="1 0 0 1 -36 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
-</path>
 <path layer="Enterocytes" matrix="1 0 0 1 80 0" stroke="purple" arrow="fdouble/small">
 240 400 m
 244 400 l
@@ -25059,18 +24973,6 @@ h
 248 372 l
 248 384 l
 h
-</path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 4 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
-<path matrix="1 0 0 1 4 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
-</path>
-<path matrix="1 0 0 1 4 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
 </path>
 <path layer="Enterocytes" matrix="1 0 0 1 120 0" stroke="purple" arrow="fdouble/small">
 240 400 m
@@ -25091,18 +24993,6 @@ h
 248 384 l
 h
 </path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 44 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
-<path matrix="1 0 0 1 44 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
-</path>
-<path matrix="1 0 0 1 44 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
-</path>
 <path layer="Enterocytes" matrix="1 0 0 1 160 0" stroke="purple" arrow="fdouble/small">
 240 400 m
 244 400 l
@@ -25121,18 +25011,6 @@ h
 248 372 l
 248 384 l
 h
-</path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 124 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
-<path matrix="1 0 0 1 124 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
-</path>
-<path matrix="1 0 0 1 124 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
 </path>
 <path layer="Enterocytes_PKSIM" matrix="1 0 0 1 200 0" stroke="purple" arrow="fdouble/small">
 240 400 m
@@ -25153,18 +25031,6 @@ h
 248 384 l
 h
 </path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 204 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
-<path matrix="1 0 0 1 204 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
-</path>
-<path matrix="1 0 0 1 204 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
-</path>
 <path layer="Enterocytes_PKSIM" matrix="1 0 0 1 240 0" stroke="purple" arrow="fdouble/small">
 240 400 m
 244 400 l
@@ -25183,18 +25049,6 @@ h
 248 372 l
 248 384 l
 h
-</path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 244 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
-<path matrix="1 0 0 1 244 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
-</path>
-<path matrix="1 0 0 1 244 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
 </path>
 <path layer="Enterocytes_PKSIM" matrix="1 0 0 1 280 0" stroke="purple" arrow="fdouble/small">
 240 400 m
@@ -25215,18 +25069,6 @@ h
 248 384 l
 h
 </path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 284 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
-<path matrix="1 0 0 1 284 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
-</path>
-<path matrix="1 0 0 1 284 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
-</path>
 <path layer="Enterocytes_PKSIM" matrix="1 0 0 1 320 0" stroke="purple" arrow="fdouble/small">
 240 400 m
 244 400 l
@@ -25245,18 +25087,6 @@ h
 248 372 l
 248 384 l
 h
-</path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 324 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
-<path matrix="1 0 0 1 324 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
-</path>
-<path matrix="1 0 0 1 324 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
 </path>
 <path layer="Enterocytes_PKSIM" matrix="1 0 0 1 360 0" stroke="purple" arrow="fdouble/small">
 240 400 m
@@ -25277,18 +25107,6 @@ h
 248 384 l
 h
 </path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 364 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
-<path matrix="1 0 0 1 364 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
-</path>
-<path matrix="1 0 0 1 364 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
-</path>
 <path layer="Enterocytes_PKSIM" matrix="1 0 0 1 400 0" stroke="purple" arrow="fdouble/small">
 240 400 m
 244 400 l
@@ -25307,18 +25125,6 @@ h
 248 372 l
 248 384 l
 h
-</path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 404 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
-<path matrix="1 0 0 1 404 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 376 m
-224 364 l
-</path>
-<path matrix="1 0 0 1 404 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-220 360 m
-220 344 l
 </path>
 <path layer="Enterocytes" matrix="1 0 0 1 232.215 -32.6095" stroke="gray" pen="fat" opacity="30%">
 16 432 m
@@ -25345,10 +25151,6 @@ h
 100 392 m
 100 376 l
 </path>
-<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 -36 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 392 m
-228 380 l
-</path>
 <path layer="NONMUCOSA" matrix="1 0 0 1 8 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
 208 316 m
 208 308 l
@@ -25356,39 +25158,6 @@ h
 <path matrix="1 0 0 1 248 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
 208 316 m
 208 308 l
-</path>
-<path matrix="1 0 0 1 8 0" stroke="blue" pen="heavier" arrow="normal/tiny">
-496 316 m
-496 268 l
-</path>
-<path matrix="1 0 0 1 8 0" stroke="blue" pen="heavier" arrow="normal/tiny">
-480 296 m
-480 268 l
-</path>
-<path matrix="1 0 0 1 8 0" stroke="blue" pen="heavier" arrow="normal/tiny">
-396 316 m
-428 268 l
-</path>
-<path matrix="1 0 0 1 8 0" stroke="red" pen="heavier" arrow="normal/tiny">
-312 296 m
-312 268 l
-</path>
-<path matrix="1 0 0 1 8 0" stroke="red" pen="heavier" rarrow="normal/tiny">
-328 268 m
-328 316 l
-</path>
-<path matrix="1 0 0 1 8 0" stroke="red" pen="heavier" arrow="normal/tiny">
-412 316 m
-412 316 l
-380 268 l
-</path>
-<path matrix="1 0 0 1 8 0" stroke="blue" pen="heavier" arrow="normal/tiny">
-384 296 m
-416 268 l
-</path>
-<path matrix="1 0 0 1 8 0" stroke="red" pen="heavier" arrow="normal/tiny">
-424 296 m
-392 268 l
 </path>
 <path layer="MUCOSA" stroke="black" pen="heavier">
 164 404 m
@@ -25493,14 +25262,6 @@ h
 <path layer="PK-Sim_4" matrix="1 0 0 1 280.215 19.3905" stroke="black" arrow="normal/small" rarrow="normal/small">
 100 392 m
 100 376 l
-</path>
-<path layer="NONMUCOSA" matrix="1 0 0 1 280 0" stroke="black" pen="heavier" arrow="normal/tiny" rarrow="normal/tiny">
-256 316 m
-256 288 l
-</path>
-<path matrix="1 0 0 1 40 0" stroke="black" pen="heavier" arrow="normal/tiny" rarrow="normal/tiny">
-256 316 m
-256 288 l
 </path>
 <text layer="PK-SIM_release" matrix="1 0 0 1 149.342 -22.0529" transformations="translations" pos="128 468" stroke="black" type="label" width="21.586" height="6.918" depth="0" valign="baseline">Solid</text>
 <path stroke="black" arrow="normal/small">
@@ -25634,35 +25395,35 @@ h
 159.746 413.999 l
 </path>
 <text matrix="1 0 0 1 -88 0" transformations="translations" pos="136 412" stroke="black" type="label" width="18.704" height="5.446" depth="1.55" valign="baseline" size="footnote">Drug</text>
-<path layer="minEnterocytes" matrix="1 0 0 1 120 -32" fill="gray" opacity="30%">
+<path layer="minEnterocytes" matrix="1 0 0 1 120 -32" fill="gray">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 160 -32" fill="gray" opacity="30%">
+<path matrix="1 0 0 1 160 -32" fill="gray">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 200 -32" fill="gray" opacity="30%">
+<path matrix="1 0 0 1 200 -32" fill="gray">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path layer="minEnterocytesIleum" matrix="2.25 0 0 1 220 -32" fill="gray" opacity="30%">
+<path layer="minEnterocytesIleum" matrix="2.25 0 0 1 220 -32" fill="gray">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="2.25 0 0 1 300 -32" fill="gray" opacity="30%">
+<path matrix="2.25 0 0 1 300 -32" fill="gray">
 16 432 m
 16 420 l
 48 420 l
@@ -25718,55 +25479,11 @@ h
 48 432 l
 h
 </path>
-<path layer="minEnterocytes" matrix="1 0 0 1 -76 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 -36 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 4 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path layer="minEnterocytesIleum" matrix="1 0 0 1 44 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 124 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path layer="minEnterocytesColon" matrix="1 0 0 1 204 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path layer="minTransit" matrix="1 0 0 1 -72 0" stroke="black" arrow="normal/tiny">
-200 416 m
-208 416 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="black" arrow="normal/tiny">
-200 416 m
-208 416 l
-</path>
-<path matrix="1 0 0 1 8 0" stroke="black" arrow="normal/tiny">
-200 416 m
-208 416 l
-</path>
-<path matrix="1 0 0 1 48 0" stroke="black" arrow="normal/tiny">
-200 416 m
-208 416 l
-</path>
-<path layer="minTransitIleum" matrix="1 0 0 1 128 0" stroke="black" arrow="normal/tiny">
-200 416 m
-208 416 l
-</path>
 <path layer="minExcretion" matrix="1.48459 0 0 1 429.77 0" stroke="black" arrow="normal/small">
 151.746 413.999 m
 159.746 413.999 l
 </path>
-<text matrix="-0 -1 1 -0 259.097 556.543" pos="136 412" stroke="black" type="label" width="41.954" height="6.808" depth="0" valign="baseline">Excretion</text>
+<text matrix="0 -1 1 0 259.097 556.543" pos="136 412" stroke="black" type="label" width="41.954" height="6.808" depth="0" valign="baseline">Excretion</text>
 <path layer="minBlood" matrix="2.02941 0 0 1 -244.941 0" stroke="red" pen="fat">
 168 380 m
 168 368 l
@@ -25775,50 +25492,6 @@ h
 h
 </path>
 <text matrix="1 0 0 1 -72 -4" transformations="translations" pos="168 380" stroke="black" type="minipage" width="552" height="5.265" depth="0.27" valign="top" size="footnote" style="center">Blood</text>
-<path matrix="1 0 0 1 -76 -20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 -36 -20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 4 -20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path layer="minBloodIleum" matrix="1 0 0 1 44 -20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 124 -20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path layer="minBlood" matrix="1 0 0 1 204 -20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path layer="minElimination" matrix="1 0 0 1 -72 0" stroke="purple" arrow="fdouble/small">
-240 400 m
-244 400 l
-244 388 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="purple" arrow="fdouble/small">
-240 400 m
-244 400 l
-244 388 l
-</path>
-<path matrix="1 0 0 1 8 0" stroke="purple" arrow="fdouble/small">
-240 400 m
-244 400 l
-244 388 l
-</path>
-<path layer="minEliminationIleum" matrix="1 0 0 1 88 0" stroke="purple" arrow="fdouble/small">
-240 400 m
-244 400 l
-244 388 l
-</path>
 <path layer="minZoom" matrix="1 0 0 1 252 72" fill="gray" opacity="30%">
 16 432 m
 16 420 l
@@ -25879,16 +25552,7 @@ h
 200 416 m
 208 416 l
 </path>
-<path layer="minEliminationIleum" matrix="1 0 0 1 168 0" stroke="purple" arrow="fdouble/small">
-240 400 m
-244 400 l
-244 388 l
-</path>
-<path layer="minTransitIleum" matrix="1 0 0 1 208 0" stroke="black" arrow="normal/tiny">
-200 416 m
-208 416 l
-</path>
-<path layer="minZoom" matrix="1 0 0 1 -152 0" stroke="black" pen="fat" arrow="normal/tiny">
+<path matrix="1 0 0 1 -152 0" stroke="black" pen="fat" arrow="normal/tiny">
 384 436 m
 384 480 l
 392 480 l
@@ -25932,23 +25596,6 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 44 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 88 0" stroke="black" arrow="normal/tiny">
-200 416 m
-208 416 l
-</path>
-<path matrix="1 0 0 1 44 -20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 48 0" stroke="purple" arrow="fdouble/small">
-240 400 m
-244 400 l
-244 388 l
-</path>
 <path matrix="1 0 0 1 280 -12" fill="blue" opacity="30%">
 16 432 m
 16 420 l
@@ -25976,23 +25623,6 @@ h
 48 420 l
 48 432 l
 h
-</path>
-<path matrix="1 0 0 1 84 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 128 0" stroke="black" arrow="normal/tiny">
-200 416 m
-208 416 l
-</path>
-<path matrix="1 0 0 1 84 -20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 88 0" stroke="purple" arrow="fdouble/small">
-240 400 m
-244 400 l
-244 388 l
 </path>
 <path matrix="1 0 0 1 320 -12" fill="gray" opacity="30%">
 16 432 m
@@ -26022,23 +25652,6 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 124 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 168 0" stroke="black" arrow="normal/tiny">
-200 416 m
-208 416 l
-</path>
-<path matrix="1 0 0 1 124 -20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 128 0" stroke="purple" arrow="fdouble/small">
-240 400 m
-244 400 l
-244 388 l
-</path>
 <path matrix="1 0 0 1 360 -12" fill="blue" opacity="30%">
 16 432 m
 16 420 l
@@ -26066,23 +25679,6 @@ h
 48 420 l
 48 432 l
 h
-</path>
-<path matrix="1 0 0 1 164 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 208 0" stroke="black" arrow="normal/tiny">
-200 416 m
-208 416 l
-</path>
-<path matrix="1 0 0 1 164 -20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
-</path>
-<path matrix="1 0 0 1 168 0" stroke="purple" arrow="fdouble/small">
-240 400 m
-244 400 l
-244 388 l
 </path>
 <text layer="ADAMname" matrix="1 0 0 1 128 40" transformations="translations" pos="168 432" stroke="black" type="minipage" width="32" height="5.265" depth="0.27" valign="top" size="footnote" style="center">Ileum II</text>
 <text matrix="1 0 0 1 208 40" transformations="translations" pos="168 432" stroke="black" type="minipage" width="32" height="5.265" depth="0.27" valign="top" size="footnote" style="center">Ileu. IV</text>
@@ -26156,35 +25752,35 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 -76 20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 -76 -384" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 -36 20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 -36 -384" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 4 20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 4 -384" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 204 20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 204 -384" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 -72 20" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 -72 20" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
-<path matrix="1 0 0 1 -32 20" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 -32 20" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
-<path matrix="1 0 0 1 8 20" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 8 20" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
-<path matrix="1 0 0 1 48 20" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 48 20" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26202,11 +25798,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 44 20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 44 -384" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 88 20" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 88 20" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26224,11 +25820,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 84 20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 84 -384" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 128 20" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 128 20" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26246,11 +25842,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 124 20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 124 -384" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 168 20" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 168 20" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26268,11 +25864,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 164 20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 164 -384" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 208 20" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 208 20" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26346,35 +25942,35 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 -76 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 2 -76 -364" stroke="black" arrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 -36 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 2 -36 -364" stroke="black" arrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 4 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 2 4 -364" stroke="black" arrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 204 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 2 204 -364" stroke="black" arrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 -72 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 -72 40" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
-<path matrix="1 0 0 1 -32 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 -32 40" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
-<path matrix="1 0 0 1 8 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 8 40" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
-<path matrix="1 0 0 1 48 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 48 40" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26392,11 +25988,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 44 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 2 44 -364" stroke="black" arrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 88 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 88 40" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26414,11 +26010,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 84 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 2 84 -364" stroke="black" arrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 128 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 128 40" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26436,11 +26032,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 124 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 2 124 -364" stroke="black" arrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 168 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 168 40" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26458,11 +26054,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 164 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 2 164 -364" stroke="black" arrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 208 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 208 40" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26482,7 +26078,7 @@ h
 151.746 413.999 m
 159.746 413.999 l
 </path>
-<path layer="ACAT" matrix="1 0 0 1 80 -32" fill="orange" opacity="30%">
+<path layer="ACAT" matrix="1 0 0 1 80 -32" fill="orange">
 16 432 m
 16 420 l
 48 420 l
@@ -26496,15 +26092,15 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 -116 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 -116 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path layer="ADAMSolid" matrix="1 0 0 1 -116 20" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path layer="ADAMSolid" matrix="1 0 0 2 -116 -384" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 -116 40" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 2 -116 -364" stroke="black" arrow="normal/small">
 224 408 m
 224 400 l
 </path>
@@ -26523,8 +26119,8 @@ h
 <text matrix="1 0 0 1 8 40" transformations="translations" pos="168 432" stroke="black" type="minipage" width="32" height="5.996" depth="1" valign="top" size="footnote" style="center">Jeju. I</text>
 <text matrix="1 0 0 1 48 40" transformations="translations" pos="168 432" stroke="black" type="minipage" width="32" height="5.996" depth="1" valign="top" size="footnote" style="center">Jeju. II</text>
 <text matrix="1 0 0 1 88 40" transformations="translations" pos="168 432" stroke="black" type="minipage" width="72" height="5.265" depth="0.27" valign="top" size="footnote" style="center">Ileum I</text>
-<text matrix="1 0 0 1 248 40" transformations="translations" pos="168 432" stroke="black" type="minipage" width="232" height="5.265" depth="0.27" valign="top" size="footnote" style="center">Colon</text>
-<text matrix="1 0 0 1 168 40" transformations="translations" pos="168 432" stroke="black" type="minipage" width="72" height="5.265" depth="0.27" valign="top" size="footnote" style="center">Ileum II</text>
+<text layer="PKSAnameColon" matrix="1 0 0 1 248 40" transformations="translations" pos="168 432" stroke="black" type="minipage" width="232" height="5.265" depth="0.27" valign="top" size="footnote" style="center">Colon</text>
+<text layer="PKSAname" matrix="1 0 0 1 168 40" transformations="translations" pos="168 432" stroke="black" type="minipage" width="72" height="5.265" depth="0.27" valign="top" size="footnote" style="center">Ileum II</text>
 <path layer="PKSABlood" matrix="2.02941 0 0 1 -244.941 -32" stroke="red" pen="fat">
 168 380 m
 168 368 l
@@ -26532,7 +26128,6 @@ h
 440 380 l
 h
 </path>
-<text matrix="1 0 0 1 -72 -36" transformations="translations" pos="168 380" stroke="black" type="minipage" width="552" height="5.265" depth="0.27" valign="top" size="footnote" style="center">Blood</text>
 <path matrix="1 0 0 1 192 -16" stroke="red" pen="fat">
 96 284 m
 96 272 l
@@ -26561,9 +26156,9 @@ h
 372 328 l
 h
 </path>
-<text layer="PKSABlood" matrix="1 0 0 1 0 -20" transformations="translations" pos="288 284" stroke="black" type="minipage" width="112" height="5.958" depth="0.96" valign="top" style="center">Venous Blood</text>
-<text matrix="1 0 0 1 136 -20" transformations="translations" pos="288 284" stroke="black" type="minipage" width="112" height="5.958" depth="0.96" valign="top" style="center">Arterial Blood</text>
-<path layer="PKSAColon" matrix="1 0 0 1 400 -12" fill="gray" opacity="30%">
+<text layer="PKSABlood" matrix="1 0 0 1 0 -20" transformations="translations" pos="288 284" stroke="red" type="minipage" width="112" height="5.958" depth="0.96" valign="top" style="center">\textbf{Venous Blood}</text>
+<text matrix="1 0 0 1 136 -20" transformations="translations" pos="288 284" stroke="red" type="minipage" width="112" height="5.958" depth="0.96" valign="top" style="center">\textbf{Arterial Blood}</text>
+<path layer="PKSAColon" matrix="1 0 0 1 400 -12" fill="gray">
 16 432 m
 16 420 l
 48 420 l
@@ -26577,7 +26172,7 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 400 -32" fill="gray" opacity="30%">
+<path matrix="1 0 0 1 400 -32" fill="gray">
 16 432 m
 16 420 l
 48 420 l
@@ -26591,11 +26186,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 204 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 204 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 248 0" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 248 0" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26604,21 +26199,21 @@ h
 244 400 l
 244 388 l
 </path>
-<path matrix="1 0 0 1 440 -12" fill="blue" opacity="30%">
+<path matrix="1 0 0 1 440 -12" fill="0.255 0.322 0.467">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 440 -12" stroke="blue" pen="fat">
+<path matrix="1 0 0 1 440 -12" stroke="0.051 0.18 0.467" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 440 -32" fill="orange" opacity="30%">
+<path matrix="1 0 0 1 440 -32" fill="orange">
 16 432 m
 16 420 l
 48 420 l
@@ -26632,11 +26227,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 244 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 244 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 288 0" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 288 0" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26645,21 +26240,21 @@ h
 244 400 l
 244 388 l
 </path>
-<path matrix="1 0 0 1 480 -12" fill="blue" opacity="30%">
+<path matrix="1 0 0 1 480 -12" fill="0.255 0.322 0.467">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 480 -12" stroke="blue" pen="fat">
+<path matrix="1 0 0 1 480 -12" stroke="0.051 0.18 0.467" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 480 -32" fill="orange" opacity="30%">
+<path matrix="1 0 0 1 480 -32" fill="orange">
 16 432 m
 16 420 l
 48 420 l
@@ -26673,11 +26268,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 284 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 284 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 328 0" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 328 0" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26686,21 +26281,21 @@ h
 244 400 l
 244 388 l
 </path>
-<path matrix="1 0 0 1 520 -12" fill="blue" opacity="30%">
+<path matrix="1 0 0 1 520 -12" fill="0.255 0.322 0.467">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 520 -12" stroke="blue" pen="fat">
+<path matrix="1 0 0 1 520 -12" stroke="0.051 0.18 0.467" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 520 -32" fill="orange" opacity="30%">
+<path matrix="1 0 0 1 520 -32" fill="orange">
 16 432 m
 16 420 l
 48 420 l
@@ -26714,11 +26309,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 324 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 324 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 368 0" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 368 0" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26727,21 +26322,21 @@ h
 244 400 l
 244 388 l
 </path>
-<path matrix="1 0 0 1 560 -12" fill="blue" opacity="30%">
+<path matrix="1 0 0 1 560 -12" fill="0.255 0.322 0.467">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 560 -12" stroke="blue" pen="fat">
+<path matrix="1 0 0 1 560 -12" stroke="0.051 0.18 0.467" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 560 -32" fill="orange" opacity="30%">
+<path matrix="1 0 0 1 560 -32" fill="orange">
 16 432 m
 16 420 l
 48 420 l
@@ -26755,11 +26350,11 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 364 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+<path matrix="1 0 0 2 364 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
 224 408 m
 224 400 l
 </path>
-<path matrix="1 0 0 1 408 0" stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 408 0" stroke="black" arrow="normal/normal">
 200 416 m
 208 416 l
 </path>
@@ -26768,23 +26363,19 @@ h
 244 400 l
 244 388 l
 </path>
-<path matrix="1 0 0 1 600 -12" fill="blue" opacity="30%">
+<path matrix="1 0 0 1 600 -12" fill="0.255 0.322 0.467">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 600 -32" fill="orange" opacity="30%">
+<path matrix="1 0 0 1 600 -32" fill="orange">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
-</path>
-<path matrix="1 0 0 1 404 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-224 408 m
-224 400 l
 </path>
 <path matrix="1 0 0 1 600 -32" stroke="orange" pen="fat">
 16 432 m
@@ -26793,49 +26384,49 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 600 -12" stroke="blue" pen="fat">
+<path matrix="1 0 0 1 600 -12" stroke="0.051 0.18 0.467" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path layer="PKSAMucosa" matrix="1 0 0 1 88 -48" fill="darkorange" opacity="30%">
+<path layer="PKSAMucosa" matrix="1 0 0 1 88 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 128 -48" fill="darkorange" opacity="30%">
+<path matrix="1 0 0 1 128 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 168 -48" fill="darkorange" opacity="30%">
+<path matrix="1 0 0 1 168 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 208 -48" fill="darkorange" opacity="30%">
+<path matrix="1 0 0 1 208 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="2.25 0 0 1 228 -48" fill="darkorange" opacity="30%">
+<path matrix="2.25 0 0 1 228 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="2.25 0 0 1 308 -48" fill="darkorange" opacity="30%">
+<path matrix="2.25 0 0 1 308 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
@@ -26884,7 +26475,7 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 408 -48" fill="darkorange" opacity="30%">
+<path matrix="1 0 0 1 408 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
@@ -26898,7 +26489,7 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 448 -48" fill="darkorange" opacity="30%">
+<path matrix="1 0 0 1 448 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
@@ -26912,7 +26503,7 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 488 -48" fill="darkorange" opacity="30%">
+<path matrix="1 0 0 1 488 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
@@ -26926,7 +26517,7 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 528 -48" fill="darkorange" opacity="30%">
+<path matrix="1 0 0 1 528 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
@@ -26940,7 +26531,7 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 568 -48" fill="darkorange" opacity="30%">
+<path matrix="1 0 0 1 568 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
@@ -26954,7 +26545,7 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 608 -48" fill="darkorange" opacity="30%">
+<path matrix="1 0 0 1 608 -48" fill="darkorange">
 16 432 m
 16 420 l
 48 420 l
@@ -26968,168 +26559,168 @@ h
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 80 -64" fill="brown" opacity="30%">
+<path matrix="1 0 0 1 80 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 120 -64" fill="brown" opacity="30%">
+<path matrix="1 0 0 1 120 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 160 -64" fill="brown" opacity="30%">
+<path matrix="1 0 0 1 160 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 200 -64" fill="brown" opacity="30%">
+<path matrix="1 0 0 1 200 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="2.25 0 0 1 220 -64" fill="brown" opacity="30%">
+<path matrix="2.25 0 0 1 220 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="2.25 0 0 1 300 -64" fill="brown" opacity="30%">
+<path matrix="2.25 0 0 1 300 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 80 -64" stroke="brown" pen="fat">
+<path matrix="1 0 0 1 80 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 120 -64" stroke="brown" pen="fat">
+<path matrix="1 0 0 1 120 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 160 -64" stroke="brown" pen="fat">
+<path matrix="1 0 0 1 160 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 200 -64" stroke="brown" pen="fat">
+<path matrix="1 0 0 1 200 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="2.25 0 0 1 220 -64" stroke="brown" pen="fat">
+<path matrix="2.25 0 0 1 220 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="2.25 0 0 1 300 -64" stroke="brown" pen="fat">
+<path matrix="2.25 0 0 1 300 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 400 -64" fill="brown" opacity="30%">
+<path matrix="1 0 0 1 400 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 400 -64" stroke="brown" pen="fat">
+<path matrix="1 0 0 1 400 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 440 -64" fill="brown" opacity="30%">
+<path matrix="1 0 0 1 440 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 440 -64" stroke="brown" pen="fat">
+<path matrix="1 0 0 1 440 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 480 -64" fill="brown" opacity="30%">
+<path matrix="1 0 0 1 480 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 480 -64" stroke="brown" pen="fat">
+<path matrix="1 0 0 1 480 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 520 -64" fill="brown" opacity="30%">
+<path matrix="1 0 0 1 520 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 520 -64" stroke="brown" pen="fat">
+<path matrix="1 0 0 1 520 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 560 -64" fill="brown" opacity="30%">
+<path matrix="1 0 0 1 560 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 560 -64" stroke="brown" pen="fat">
+<path matrix="1 0 0 1 560 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 600 -64" fill="brown" opacity="30%">
+<path matrix="1 0 0 1 600 -64" fill="0.949 0.729 0.522">
 16 432 m
 16 420 l
 48 420 l
 48 432 l
 h
 </path>
-<path matrix="1 0 0 1 600 -64" stroke="brown" pen="fat">
+<path matrix="1 0 0 1 600 -64" stroke="0.949 0.502 0.082" pen="fat">
 16 432 m
 16 420 l
 48 420 l
@@ -27143,81 +26734,9 @@ h
 660 404 l
 h
 </path>
-<text matrix="0 -1 1 0 259.097 531.461" pos="136 412" stroke="black" type="label" width="32.987" height="6.808" depth="0" valign="baseline">Mucosa</text>
+<text matrix="0 -1 1 0 259.097 531.461" pos="136 412" stroke="black" type="label" width="38.15" height="6.835" depth="0" valign="baseline">\textbf{Mucosa}</text>
 <text matrix="1 0 0 1 -123.681 -36" transformations="translations" pos="136 412" stroke="black" type="label" width="75.481" height="5.98" depth="1.99" valign="baseline" size="footnote">Interstitium/Plasma</text>
 <text matrix="1 0 0 1 -90.7432 -52" transformations="translations" pos="136 412" stroke="black" type="label" width="42.738" height="5.535" depth="0" valign="baseline" size="footnote">Blood Cells</text>
-<path layer="Dissolved<->INT<->PV" matrix="1 0 0 1 -76 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 412 m
-232 380 l
-</path>
-<path matrix="1 0 0 1 -76 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
-<path matrix="1 0 0 1 -116 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 412 m
-232 380 l
-</path>
-<path matrix="1 0 0 1 -116 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
-<path matrix="1 0 0 1 -36 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
-<path matrix="1 0 0 1 4 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 412 m
-232 380 l
-</path>
-<path matrix="1 0 0 1 4 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
-<path matrix="1 0 0 1 44 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 412 m
-232 380 l
-</path>
-<path matrix="1 0 0 1 44 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
-<path matrix="1 0 0 1 124 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 412 m
-232 380 l
-</path>
-<path matrix="1 0 0 1 124 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
-<path matrix="1 0 0 1 204 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
-<path matrix="1 0 0 1 244 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
-<path matrix="1 0 0 1 284 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
-<path matrix="1 0 0 1 324 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
-<path matrix="1 0 0 1 -36 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-228 412 m
-232 380 l
-</path>
-<path matrix="1 0 0 1 364 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
-<path matrix="1 0 0 1 404 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
-232 376 m
-228 344 l
-</path>
 <path layer="NONMUCOSA" matrix="1 0 0 1.15385 0 -134.154" stroke="black" pen="fat">
 92 404 m
 92 352 l
@@ -27225,102 +26744,591 @@ h
 660 404 l
 h
 </path>
-<text matrix="-0 -1 1 -0 340 1016" pos="684 336" stroke="black" type="minipage" width="60" height="5.898" depth="0.91" valign="top" style="center">Non mucosa</text>
-<path layer="BC->BC" matrix="1 0 0 1 -76 0" stroke="black" rarrow="normal/tiny">
+<text matrix="0 -1 1 0 348 1016" pos="684 336" stroke="black" type="minipage" width="60" height="11.881" depth="6.91" valign="top" style="center">\textbf{Non mucosa}</text>
+<path layer="BC->BC" matrix="1 0 0 1 8 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
 </path>
-<path matrix="1 0 0 1 -36 0" stroke="black" rarrow="normal/tiny">
+<path matrix="1 0 0 1 248 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
 </path>
-<path matrix="1 0 0 1 4 0" stroke="black" rarrow="normal/tiny">
+<path layer="INT->INT" matrix="1 0 0 1 -72 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path matrix="1 0 0 1 -32 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path matrix="1 0 0 1 48 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path matrix="1 0 0 1 88 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path matrix="1 0 0 1 168 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path matrix="1 0 0 1 248 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path matrix="1 0 0 1 288 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path matrix="1 0 0 1 328 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path matrix="1 0 0 1 368 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path matrix="1 0 0 1 408 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path matrix="1 0 0 1 448 0" stroke="black" rarrow="normal/tiny">
+204 376 m
+200 328 l
+</path>
+<path layer="minTransit" matrix="1 0 0 1 -72 0" stroke="black" arrow="normal/normal">
+200 416 m
+208 416 l
+</path>
+<path matrix="1 0 0 1 -32 0" stroke="black" arrow="normal/normal">
+200 416 m
+208 416 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="black" arrow="normal/normal">
+200 416 m
+208 416 l
+</path>
+<path matrix="1 0 0 1 48 0" stroke="black" arrow="normal/normal">
+200 416 m
+208 416 l
+</path>
+<path layer="minTransitIleum" matrix="1 0 0 1 128 0" stroke="black" arrow="normal/normal">
+200 416 m
+208 416 l
+</path>
+<path matrix="1 0 0 1 208 0" stroke="black" arrow="normal/normal">
+200 416 m
+208 416 l
+</path>
+<path layer="minEnterocytes" matrix="1 0 0 2 -76 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 2 -36 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 2 4 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path layer="minEnterocytesIleum" matrix="1 0 0 2 44 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 2 124 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path layer="minEnterocytesColon" matrix="1 0 0 2 204 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path layer="minBlood" matrix="1 0 0 2 -36 -424" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 2 4 -424" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 2 204 -424" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 2 -76 -424" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path layer="minBloodIleum" matrix="1 0 0 2 44 -424" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 2 124 -424" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path layer="minElimination" matrix="1 0 0 1 -72 0" stroke="purple" arrow="fdouble/small">
+240 400 m
+244 400 l
+244 388 l
+</path>
+<path matrix="1 0 0 1 -32 0" stroke="purple" arrow="fdouble/small">
+240 400 m
+244 400 l
+244 388 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="purple" arrow="fdouble/small">
+240 400 m
+244 400 l
+244 388 l
+</path>
+<path layer="minEliminationIleum" matrix="1 0 0 1 88 0" stroke="purple" arrow="fdouble/small">
+240 400 m
+244 400 l
+244 388 l
+</path>
+<path matrix="1 0 0 1 168 0" stroke="purple" arrow="fdouble/small">
+240 400 m
+244 400 l
+244 388 l
+</path>
+<path layer="ADAMIleum" matrix="1 0 0 2 44 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 1 88 0" stroke="black" arrow="normal/normal">
+200 416 m
+208 416 l
+</path>
+<path matrix="1 0 0 2 44 -424" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 1 48 0" stroke="purple" arrow="fdouble/small">
+240 400 m
+244 400 l
+244 388 l
+</path>
+<path matrix="1 0 0 2 84 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 1 128 0" stroke="black" arrow="normal/normal">
+200 416 m
+208 416 l
+</path>
+<path matrix="1 0 0 2 84 -424" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 1 88 0" stroke="purple" arrow="fdouble/small">
+240 400 m
+244 400 l
+244 388 l
+</path>
+<path matrix="1 0 0 2 124 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 1 168 0" stroke="black" arrow="normal/normal">
+200 416 m
+208 416 l
+</path>
+<path matrix="1 0 0 2 124 -424" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 1 128 0" stroke="purple" arrow="fdouble/small">
+240 400 m
+244 400 l
+244 388 l
+</path>
+<path matrix="1 0 0 2 164 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 1 208 0" stroke="black" arrow="normal/normal">
+200 416 m
+208 416 l
+</path>
+<path matrix="1 0 0 2 164 -424" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<path matrix="1 0 0 1 168 0" stroke="purple" arrow="fdouble/small">
+240 400 m
+244 400 l
+244 388 l
+</path>
+<path layer="Dissolved<->INT<->PV" matrix="1 0 0 1 -72 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 412 m
+232 380 l
+</path>
+<path matrix="1 0 0 1 -72 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path matrix="1 0 0 1 -112 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 412 m
+232 380 l
+</path>
+<path matrix="1 0 0 1 -112 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path matrix="1 0 0 1 -32 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 412 m
+232 380 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path matrix="1 0 0 1 48 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 412 m
+232 380 l
+</path>
+<path matrix="1 0 0 1 48 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path matrix="1 0 0 1 128 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 412 m
+232 380 l
+</path>
+<path matrix="1 0 0 1 128 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path matrix="1 0 0 1 208 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path matrix="1 0 0 1 248 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path matrix="1 0 0 1 288 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path matrix="1 0 0 1 328 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path matrix="1 0 0 1 -32 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 412 m
+232 380 l
+</path>
+<path matrix="1 0 0 1 368 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path matrix="1 0 0 1 408 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+232 376 m
+228 344 l
+</path>
+<path layer="Enterocytes<->Int<->BC<->PV" matrix="1 0 0 1 -72 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path matrix="1 0 0 1 -72 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 -72 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 -112 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 -112 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path matrix="1 0 0 1 -112 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 -32 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 -32 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 48 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path matrix="1 0 0 1 48 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 48 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 128 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path matrix="1 0 0 1 128 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 128 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 208 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path matrix="1 0 0 1 208 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 208 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 248 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path matrix="1 0 0 1 248 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 248 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 288 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path matrix="1 0 0 1 288 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 288 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 328 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path matrix="1 0 0 1 328 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 328 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 368 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path matrix="1 0 0 1 368 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 368 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 408 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path matrix="1 0 0 1 408 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+228 376 m
+224 364 l
+</path>
+<path matrix="1 0 0 1 408 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+220 360 m
+220 344 l
+</path>
+<path matrix="1 0 0 1 -32 0" stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+224 392 m
+228 380 l
+</path>
+<path layer="PKSAColon" matrix="1 0 0 2 404 -404" stroke="black" arrow="normal/small" rarrow="normal/small">
+224 408 m
+224 400 l
+</path>
+<text layer="PKSAnameColonFull" transformations="translations" pos="416 472" stroke="black" type="minipage" width="32" height="5.216" depth="0.23" valign="top" size="footnote" style="center">Cecum</text>
+<text matrix="1 0 0 1 40 0" transformations="translations" pos="416 472" stroke="black" type="minipage" width="32" height="5.216" depth="0.23" valign="top" size="footnote" style="center">Asc.</text>
+<text matrix="1 0 0 1 80 0" transformations="translations" pos="416 472" stroke="black" type="minipage" width="32" height="5.216" depth="0.23" valign="top" size="footnote" style="center">Trans.</text>
+<text matrix="1 0 0 1 120 0" transformations="translations" pos="416 472" stroke="black" type="minipage" width="32" height="5.216" depth="0.23" valign="top" size="footnote" style="center">Desc.</text>
+<text matrix="1 0 0 1 160 0" transformations="translations" pos="416 472" stroke="black" type="minipage" width="32" height="6.035" depth="1.05" valign="top" size="footnote" style="center">Sigmoid</text>
+<text matrix="1 0 0 1 200 0" transformations="translations" pos="416 472" stroke="black" type="minipage" width="32" height="5.216" depth="0.23" valign="top" size="footnote" style="center">Rectum</text>
+<text layer="PKSABlood" matrix="1 0 0 1 -72 -36" transformations="translations" pos="168 380" stroke="red" type="minipage" width="552" height="5.958" depth="0.96" valign="top" style="center">\textbf{Blood}</text>
+<path layer="NONMUCOSA" matrix="9.7493 0 0 0.964486 -59.9665 -88.6578" stroke="0.918 0.757 0.349" pen="heavier">
+16 432 m
+16 420 l
+48 420 l
+48 432 l
+h
+</path>
+<path matrix="9.75 0 0 0.969631 -60 -110.881" stroke="0.729 0.584 0.224" pen="heavier">
+16 432 m
+16 420 l
+48 420 l
+48 432 l
+h
+</path>
+<path matrix="9.76522 0.00052795 -0.00515556 1 -58.0164 -144.008" fill="0.549 0.478 0.357">
+16 432 m
+16 420 l
+48 420 l
+48 432 l
+h
+</path>
+<path matrix="7.25002 0.00052721 -0.00382766 0.998594 301.653 -103.418" fill="0.918 0.835 0.631">
+16 432 m
+16 420 l
+48 420 l
+48 432 l
+h
+</path>
+<path matrix="7.26132 0.00052795 -0.00383362 1 301.475 -144.008" fill="0.549 0.478 0.357">
+16 432 m
+16 420 l
+48 420 l
+48 432 l
+h
+</path>
+<path matrix="1 0 0 1 8 0" stroke="blue" pen="heavier" arrow="normal/tiny">
+480 296 m
+480 268 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="red" pen="heavier" arrow="normal/tiny">
+424 296 m
+392 268 l
+</path>
+<path matrix="7.25002 0.00052721 -0.00382766 0.998594 301.653 -123.418" fill="0.729 0.655 0.475">
+16 432 m
+16 420 l
+48 420 l
+48 432 l
+h
+</path>
+<path matrix="1 0 0 1 8 0" stroke="blue" pen="heavier" arrow="normal/tiny">
+396 316 m
+428 268 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="red" pen="heavier" arrow="normal/tiny">
+412 316 m
+412 316 l
+380 268 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="blue" pen="heavier" arrow="normal/tiny">
+384 296 m
+416 268 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="red" pen="heavier" rarrow="normal/tiny">
+328 268 m
+328 316 l
+</path>
+<path matrix="1 0 0 1 8 0" stroke="red" pen="heavier" arrow="normal/tiny">
+312 296 m
+312 268 l
+</path>
+<path matrix="1 0 0 1 40 0" stroke="black" pen="heavier" arrow="normal/tiny" rarrow="normal/tiny">
+256 316 m
+256 288 l
+</path>
+<path matrix="7.25 0 0 0.969631 300 -110.881" stroke="0.729 0.584 0.224" pen="heavier">
+16 432 m
+16 420 l
+48 420 l
+48 432 l
+h
+</path>
+<path matrix="1 0 0 1 8 0" stroke="blue" pen="heavier" arrow="normal/tiny">
+496 316 m
+496 268 l
+</path>
+<path layer="BC->BC" matrix="1 0 0 1 448 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
 </path>
-<path matrix="1 0 0 1 44 0" stroke="black" rarrow="normal/tiny">
+<path matrix="1 0 0 1 48 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
 </path>
-<path matrix="1 0 0 1 84 0" stroke="black" rarrow="normal/tiny">
+<path matrix="1 0 0 1 88 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
 </path>
-<path matrix="1 0 0 1 164 0" stroke="black" rarrow="normal/tiny">
+<path matrix="1 0 0 1 -32 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
 </path>
-<path matrix="1 0 0 1 244 0" stroke="black" rarrow="normal/tiny">
+<path matrix="1 0 0 1 -72 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
 </path>
-<path matrix="1 0 0 1 284 0" stroke="black" rarrow="normal/tiny">
+<path matrix="1 0 0 1 168 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
 </path>
-<path matrix="1 0 0 1 324 0" stroke="black" rarrow="normal/tiny">
+<path layer="NONMUCOSA" matrix="7.24948 0 0 0.964486 300.025 -88.6578" stroke="0.918 0.757 0.349" pen="heavier">
+16 432 m
+16 420 l
+48 420 l
+48 432 l
+h
+</path>
+<path layer="BC->BC" matrix="1 0 0 1 368 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
 </path>
-<path matrix="1 0 0 1 364 0" stroke="black" rarrow="normal/tiny">
+<path matrix="1 0 0 1 408 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
 </path>
-<path matrix="1 0 0 1 404 0" stroke="black" rarrow="normal/tiny">
+<path matrix="1 0 0 1 328 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
 </path>
-<path matrix="1 0 0 1 444 0" stroke="black" rarrow="normal/tiny">
+<path layer="NONMUCOSA" matrix="1 0 0 1 280 0" stroke="black" pen="heavier" arrow="normal/tiny" rarrow="normal/tiny">
+256 316 m
+256 288 l
+</path>
+<path layer="BC->BC" matrix="1 0 0 1 288 0" stroke="black" rarrow="normal/tiny">
 196 360 m
 192 308 l
-</path>
-<path layer="INT->INT" matrix="1 0 0 1 -80 0" stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
-</path>
-<path matrix="1 0 0 1 -40 0" stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
-</path>
-<path stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
-</path>
-<path matrix="1 0 0 1 40 0" stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
-</path>
-<path matrix="1 0 0 1 80 0" stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
-</path>
-<path matrix="1 0 0 1 160 0" stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
-</path>
-<path matrix="1 0 0 1 240 0" stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
-</path>
-<path matrix="1 0 0 1 280 0" stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
-</path>
-<path matrix="1 0 0 1 320 0" stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
-</path>
-<path matrix="1 0 0 1 360 0" stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
-</path>
-<path matrix="1 0 0 1 400 0" stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
-</path>
-<path matrix="1 0 0 1 440 0" stroke="black" rarrow="normal/tiny">
-204 376 m
-200 328 l
 </path>
 </page>
 </ipe>
