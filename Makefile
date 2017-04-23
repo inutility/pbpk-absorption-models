@@ -1,7 +1,7 @@
 source = pbpk-absorption-models.ipe
 zip = pbpk-absorption-models.zip
 
-views = $(shell echo view-1-{$(shell seq -s, 1 8)} view-2-{$(shell seq -s, 1 16)})
+views = $(shell echo view-1-{$(shell seq -s, 1 8)} view-2-{$(shell seq -s, 1 16)} view-3-{$(shell seq -s, 1 4)})
 
 pdf          = $(views:%=pdf/%.pdf)
 svg          = $(views:%=svg/%.svg)
